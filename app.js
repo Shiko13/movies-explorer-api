@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 });
 
 const options = {
-  origin: ['https://api.s-al-terentev.nomoredomains.work', 'https://s-al-terentev.nomoredomains.work'],
+  origin: ['https://api.s-al-terentev-movies.nomoredomains.co', 'https://s-al-terentev-movies.nomoredomains.co'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
