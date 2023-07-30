@@ -6,7 +6,7 @@ const CastError = require('../errors/CastError');
 const NotFoundError = require('../errors/NotFoundError');
 
 module.exports.getAllMyMovies = (req, res, next) => {
-  Movie.find({})
+  Movie.find({ owner: req.user._id })
     .then((movies) => res.send({ movies }))
     .catch(next);
 };
